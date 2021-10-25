@@ -1,0 +1,15 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* input.ng-invalid.ng-touched{
+  border: 1px solid red;
+box-shadow: 0 0 13px inset rgba(255,0,0,0.09);
+} */
+
+#alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

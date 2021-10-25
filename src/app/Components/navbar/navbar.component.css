@@ -1,0 +1,9 @@
+#navbarSupportedContent li a:hover{
+    color:white;
+    text-decoration: underline snow;
+}
+#login1:hover{
+    background-color: rgb(255, 255, 255 ,0.3) ;
+    text-decoration: underline white;
+
+}

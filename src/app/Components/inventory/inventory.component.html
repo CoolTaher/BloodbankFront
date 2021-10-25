@@ -1,0 +1,86 @@
+<div class="sticky-top">
+    <app-navbar></app-navbar>
+  </div>
+<div class="mt-3">
+    <div class="container px-3 py-3">
+        <div class="card ">
+            <!--style="background-color: #ff3f62!important;;"-->
+            <div class="card-header">
+                Inventory
+            </div>
+            <div class="card-body">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active text-danger" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Donor</button>
+                        <button class="nav-link text-danger" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Recipients</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Blood Group</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center" *ngFor="let data of donor">
+                                    <td>{{data.Name}}</td>
+                                    <td>{{data.Age}}</td>
+                                    <td>{{data.Bloodgrp}}</td>
+                                    <td>{{data.Gender}}</td>
+                                    <td>{{data.Email}}</td>
+                                    <td>{{data.Phone}}</td>
+                                    <td><span class="badge bg-success" *ngIf="data.flag">Matched</span><span class="badge bg-danger" *ngIf="!data.flag">Not Matched</span></td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="text-center">
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Blood Group</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center" *ngFor="let data of patient">
+                                    <td>{{data.Name}}</td>
+                                    <td>{{data.Age}}</td>
+                                    <td>{{data.Bloodgrp}}</td>
+                                    <td>{{data.Gender}}</td>
+                                    <td>{{data.Email}}</td>
+                                    <td>{{data.Phone}}</td>
+                                    <td><span class="badge bg-success" *ngIf="data.flag">Matched</span><span class="badge bg-danger" *ngIf="!data.flag">Not Matched</span></td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>

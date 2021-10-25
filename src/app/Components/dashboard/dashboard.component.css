@@ -1,0 +1,35 @@
+.back{
+    background-image: url("../../../assets/image//bg.png");
+   background-position: center;
+   background-size: contain;
+}
+.yt{
+  box-shadow: 3px 4px 25px 6px #ff3f62;
+}
+.imgHR{
+  height: 9px;
+  /* margin-top: -2px; */
+  width: 100%;
+  background-color: rgb(231, 62, 96);
+}
+.center-me {
+    margin: auto;
+  }
+  .a{
+    text-decoration: none;
+    }
+  .object {
+    animation: MoveUpDown 4s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 10px;
+    }
+  }

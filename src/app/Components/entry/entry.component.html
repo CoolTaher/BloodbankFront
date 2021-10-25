@@ -1,0 +1,135 @@
+<div>
+    <app-navbar></app-navbar>
+</div>
+
+<div class="d-flex justify-content-center mt-3">
+    <div style="width: 50%;">
+        <div class="card d-flex justify-content-center">
+            <div class="card-header text-white" style="background-color: #ff3f62!important;font-size: x-large;">
+                Details
+            </div>
+            <div class="card-body">
+                <form [formGroup]="DetailsForm">
+
+
+                    <div class="form-group row">
+                        <label for="_type" class="col-sm-2 col-form-label">Type</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="donor" value="Donor"
+                                    formControlName="Type">
+                                <label class="form-check-label" for="donor">Donor </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="recipient" value="Recipient"
+                                    formControlName="Type">
+                                <label class="form-check-label" for="recipient">Recipient</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="fname" class="col-sm-2 col-form-label"> Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" value="" style="width: 300px;"
+                                formControlName="Name">
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="form-group row">
+                        <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input style="width: 300px;" type="text" class="form-control" id="lname" style="width: 300px;">
+                        </div>
+                    </div> -->
+
+
+                    <div class="form-group row">
+                        <label for="age" class="col-sm-2 col-form-label">Age</label>
+                        <div class="col-sm-10">
+                            <input style="width: 300px;" type="number" class="form-control" id="age"
+                                formControlName="Age">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="_gender" class="col-sm-2 col-form-label">Gender </label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="female" value="Female"
+                                    formControlName="Gender">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="male" value="Male"
+                                    formControlName="Gender">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="other" value="Others"
+                                    formControlName="Gender">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <label for="bg" class="col-sm-2 col-form-label">Blood</label>
+                        <div class="col-sm-10">
+                            <select class="custom-select" id="bg" style="width: 300px;" formControlName="Bloodgrp">
+                                <!-- <option selected>Choose...</option> -->
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input style="width: 300px;" type="email" class="form-control" id="email" value=""
+                                formControlName="Email" email>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="cnct" class="col-sm-2 col-form-label">Contact</label>
+                        <div class="col-sm-10">
+                            <input style="width: 300px;" type="number" class="form-control" id="cnct"
+                                formControlName="Phone">
+                        </div>
+                    </div>
+
+
+                </form>
+                <div class="" style="margin-left: 220px;">
+                    <button class="btn btn-success" (click)="submit()"
+                        [disabled]=" !this.DetailsForm.valid">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="alert" *ngIf="Talert">
+        <div class="alert alert-success mr-2 mb-2" role="alert" style="width: 500px;">
+            This is a success alert—check it out!
+        </div>
+    </div>
+
+</div>

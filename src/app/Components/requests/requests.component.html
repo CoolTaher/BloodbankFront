@@ -1,0 +1,27 @@
+<div class="sticky-top">
+    <app-navbar></app-navbar>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr class="text-center">
+            <th>Blood Group</th>
+            <th>type</th>
+            <th>Location Group</th>
+            <th>Message</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="text-center" *ngFor="let data of Bloodreq">
+            <td>{{data.Bloodgrp}}</td>
+            <td>{{data.Type}}</td>
+            <td>{{data.Location}}</td>
+            <td>{{data.Message}}</td>
+            <td>{{data.Reason}}</td>
+            <td><span class="badge bg-success" *ngIf="data.found">found</span><span class="badge bg-danger" *ngIf="!data.flag">Not found</span></td>
+            
+        </tr>
+    </tbody>
+</table>

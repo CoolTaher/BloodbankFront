@@ -1,0 +1,19 @@
+<div class="sticky-top">
+    <app-navbar></app-navbar>
+  </div>
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header">
+            Match Result
+        </div>
+        <div class="card-body">
+            <div class="card px-5 py-3 mt-4 " *ngFor="let temp of matchPair">
+                <div class="row">
+                    <div class= " col"><h4> <span class="text-danger">Donor:</span>{{temp.DName}}</h4> <h4> <span class="text-danger">Blood Grp:</span> {{temp.DBloodgrp}}</h4>  </div>
+                    <div class=" col "><h4><span class="text-success">Recipient:</span>{{temp.RName}}</h4> <h4> <span class="text-success">Blood Grp:</span> {{temp.RBloodgrp}}</h4> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

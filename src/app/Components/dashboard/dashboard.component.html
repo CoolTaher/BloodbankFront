@@ -1,0 +1,262 @@
+<!-- Loader -->
+<div *ngIf="!load" class="d-flex justify-content-center" style="margin-top: 20%;">
+  <div class="pr-2 ">
+    <div class="spinner-grow text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="pr-2">
+    <div class="spinner-grow text-warning" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="pr-2">
+    <div class="spinner-grow text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</div>
+
+
+
+<div *ngIf="load">
+<!-- Navbar -->
+<div class="sticky-top">
+  <app-navbar></app-navbar>
+</div>
+
+
+<!-- <div *ngIf="!load">
+  <img src="../../../assets/image/159.svg" style="width: 100px; height: 100px;">
+</div> -->
+
+<div>
+  <!-- Jumbotron -->
+  <div id="home1" class="back container-fluid text-center" style="height: 450px; width: 100%;">
+    <div class="d-flex justify-content-center text-white">
+      <div style="margin-top: 180px;">
+        <h1 style="font-weight: bolder;">{{Name}}</h1>
+        <h4 style="font-weight: bold; margin-top: 25px;">Connecting Blood Donors With Recipients.</h4>
+
+        <button  class="btn btn-border border-white text-white px-3 py-2" routerLink="/login" id="btncl" style="font-weight: bold; margin-top: 35px;">Click Here
+          Login  </button>
+        <div class="mt-5">
+ 
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="imgHR" ></div>
+
+  <!-- instruction -->
+  <div id="inst" class="mt-4 mb-5" >
+
+    <div class="text-center" style="color: #ff3f62!important;">
+      <h1 style="font-weight: 750;">Instructions</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="mb-5"style="width: 50%; height: 3px; background-color: #ff3f62; "></div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col"><iframe class="yt" width="600" height="345" src="https://www.youtube.com/embed/NYZBmdT_o8I?controls=0">
+          </iframe></div>
+        <div class="col text-center mt-5 ml-5" style="color: #ff3f62!important;">
+          <!-- <div>
+          </div> -->
+          <p style="font-size:xx-large; font-weight:bold; word-spacing: -2px;">It is important to rest and recuperate well after donating blood. Here are a few health tips
+            that could be of use to you.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Impact -->
+  <div>
+    <div class="text-center" style="color: #ff3f62!important;" id="cause">
+      <h1 style="font-weight: 750;">Join The Cause !</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="mb-5"style="width: 50%; height: 3px; background-color: #ff3f62; "></div>
+      <!-- <hr style="width: 50%;"> -->
+    </div>
+
+    <div class="row px-4 py-4" style="height: 400px; font-size: x-large;color: #ff3f62!important;">
+      <div class="col-7">
+        <div class="d-flex justify-content-center ml-5">
+          <div style="margin-top: 55px;">
+            <h2 style="font-weight: 750;"><i class="bi bi-award text-danger"></i> You are someone's Hero</h2>
+            In as little as few minutes, you can become someone's unnamed, unknown, but all-important Hero. Saving a
+            life
+            is a
+            noble work that starts very simply and easily. Donate Blood or donate Money, every form of contribution
+            you
+            make
+            is important, valued and essential in our shared mission to save lives.
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-5">
+        <div class="d-flex justify-content-center ">
+          <img src="../../../assets/image/savelife.svg" class="object" width="500" height="235px" alt=""
+            style="height: 350px; margin-right: 47px;">
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row px-4 py-4 mt-5" style="height: 400px; font-size: x-large;">
+      <div class="col-5">
+        <div class="d-flex justify-content-center ">
+          <img src="../../../assets/image/find.svg" class="object" width="500" height="235px" alt=""
+            style="height: 350px; margin-right: 47px;">
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="d-flex justify-content-center ml-5">
+          <div style="margin-top: 55px; color: #ff3f62!important;">
+            <h2 style="font-weight: 750;"><i class="bi bi-search text-danger"></i> Find Donors in your Area</h2>
+            Get connected in a matter of minutes at zero cost. Our App ships with a smart system that finds the
+            closest
+            blood donors. Our automated blood donation system works efficiently whenever someone needs a blood
+            transfusion.
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Count -->
+  <div class="py-5" id="impact">
+    <div class="text-center" style="color: #ff3f62!important;">
+      <h1 style="font-weight: 750;">Our Impact</h1>
+
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="mb-5"style="width: 50%; height: 3px; background-color: #ff3f62; "></div>
+      <!-- <hr style="width: 50%;"> -->
+    </div>
+
+    <div class="row ">
+      <div class="col  my-5">
+        <div class="card  text-white text-center"
+          style="color:#ff3f62!important ;background-color: honeydew; font-size: x-large;border: 0px solid;">
+          <div><img
+              src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-blood-biochemistry-and-medicine-healthcare-flatart-icons-lineal-color-flatarticons-1.png" />
+            <span style="font-weight: bolder"> Blood Unit Collected</span>
+          </div>
+          <span style=" font-weight: bolder; font-size: xx-large;">{{dlen}}</span>
+        </div>
+      </div>
+
+
+      <div class="col mx-5 my-5">
+        <div class="card  text-white text-center"
+          style="color:#ff3f62!important ;background-color: honeydew; font-size: x-large;border: 0px solid;">
+
+          <div><img
+              src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-blood-laboratory-wanicon-lineal-color-wanicon.png" />
+            <span style="font-weight: bolder"> Life We Saved</span>
+          </div>
+          <span style=" font-weight: bolder; font-size: xx-large;">{{plen}}</span>
+        </div>
+      </div>
+
+
+      <!-- <div class="col mx-5 my-5">
+        <div class="card  text-white text-center">
+          <div class="card-header " style="background-color:#ff3f62!important ; font-size: x-large;">
+            <i class="fas fa-capsules"></i> Recipients
+          </div>
+          <div class="card-body " style="color: #ff3f62!important;;">
+            <span style=" font-weight: bolder; font-size: xx-large;">{{plen}}</span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+
+
+<!-- What People Says -->
+  <div>
+    <div class="text-center" style="color: #ff3f62!important;">
+      <h1 style="font-weight: 750;">What People Says</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      `<div class="mb-5"style="width: 50%; height: 3px; background-color: #ff3f62; "></div>  
+      <!-- <hr style="width: 50%;"> -->
+    </div>
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-5 mx-2">
+          <div class="card text-white px-2 py-2 my-3" *ngFor="let data of feedback"
+            style="color:#ff3f62!important ; border-top-right-radius: 15px; border-bottom-left-radius:15px ;">
+            <div class="row">
+              <div class="col-3">
+                <div class=" d-flex justify-content-center">
+                  <img src={{data.img}} class="img-circle" style="width: 80px; height: 80px;" />
+                </div>
+              </div>
+              <div class="col-8" style="margin-left: -30px;">
+                <span style="font-size: larger;"> {{data.name}} <br> <small>{{data.add}}</small></span>
+                <br>
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <br>
+              </div>
+            </div>
+            <div class="card-text px-3 pt-2">
+              " {{data.line}} "
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="card text-white px-2 py-2 my-3" *ngFor="let data of feedback_2"
+            style="color:#ff3f62!important ; border-top-right-radius: 15px; border-bottom-left-radius:15px ;">
+            <div class="row">
+              <div class="col-3">
+                <div class=" d-flex justify-content-center">
+                  <img src={{data.img}} class="img-circle" style="width: 80px; height: 80px;" />
+                </div>
+              </div>
+              <div class="col-8" style="margin-left: -30px;">
+                <span style="font-size: larger;">{{data.name}} <br> <small>{{data.add}}</small></span>
+                <br>
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <img src="https://img.icons8.com/emoji/48/000000/star-emoji.png" style="width: 15px; height: 15px;" />
+                <br>
+              </div>
+            </div>
+            <div class="card-text px-3 pt-2">
+              " {{data.line}} "
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <app-footer></app-footer>   
+</div>
+</div>
