@@ -6,8 +6,9 @@ import { BehaviorSubject, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class MainService {
-  DB_url = 'http://localhost:3000/data/'
-  match_DB='http://localhost:3000/match/'
+  // https://bloodbankbackend.herokuapp.com/
+  DB_url = 'https://bloodbankbackend.herokuapp.com/data/'
+  match_DB='https://bloodbankbackend.herokuapp.com/match/'
   capCode:any="nothing"
   user:any="pranav"
   FindDonorID:any="pranav1234"
