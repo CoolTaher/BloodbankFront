@@ -18,7 +18,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { ErrorComponent } from './Components/error/error.component';
 import { FindComponent } from './Components/find/find.component';
 import { RequestsComponent } from './Components/requests/requests.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
